@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <TableLayout 
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:id="@+id/DBTblL"        
+        >
+             <TextView  
+                     android:id="@+id/tvBtvId"
+                   android:text="" 
+                    android:layout_height="wrap_content"
+					android:layout_width="wrap_content"                    
+                     />
+        
+        
+           <EditText  
+              android:id="@+id/etBDfname"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+		      android:textStyle="bold|italic"
+              android:hint="Enter First Name"
+              />
+           <EditText  
+              android:id="@+id/etBDlname"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+		      android:textStyle="bold|italic"
+              android:hint="Enter Last Name"
+              />
+        
+         <TableRow android:id="@+id/trBdate"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:paddingBottom="10dp"
+            	
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 >
+ 	<Button  	    android:id="@+id/btnBdatepicker"
+ 			    android:layout_height="wrap_content"
+ 			    android:text="Select Date"
+ 			    android:layout_width="wrap_content"
+ 			    />
+    
+                 <TextView  
+                     android:id="@+id/tvBtvDate"
+                   android:text="00.00.00" 
+                    android:layout_height="wrap_content"
+					android:layout_width="fill_parent"                    
+                     />
+                </LinearLayout>
+    
+                </TableRow>
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                 >
+            
+                
+                 <Button  	    android:id="@+id/btnBSave"
+ 			    android:layout_height="wrap_content"
+ 			    android:text="Save"
+ 			    android:layout_width="fill_parent"
+ 			  
+ 			    />
+ 	<Button  	    android:id="@+id/btnBcancel"
+ 			    android:layout_height="wrap_content"
+ 			    android:text="Cancel"
+ 			    android:layout_width="fill_parent"
+ 			    />
+   
+               </LinearLayout>
+   
+    
+         
+         
+    </TableLayout>
+    
+
+</FrameLayout>

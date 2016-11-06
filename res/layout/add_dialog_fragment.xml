@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+  
+    
+<TableLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/TBLADD"
+    >
+    
+        
+
+        <TableRow android:id="@+id/trReminder"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:paddingBottom="10dp"
+            	
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                 >
+                 <ImageView 
+                     android:id="@+id/ivReminder"
+                     android:layout_height="50dp"
+                     android:layout_width="50dp"
+                     android:src="@drawable/rem"
+                     
+                     		                     
+                     />
+                 <TextView  
+                     android:id="@+id/tvDRem"
+                   android:text="Reminder" 
+                    android:layout_height="wrap_content"
+					android:layout_width="fill_parent"                    
+android:gravity="center_horizontal"       
+android:textSize="25dp"              
+/>	
+                </LinearLayout>
+        </TableRow>
+
+        
+                <TableRow android:id="@+id/trBirthday"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:paddingBottom="10dp"
+            	
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                 >
+                 <ImageView 
+                     android:id="@+id/ivBirthday"
+                     android:src="@drawable/bda"
+                     android:layout_height="50dp"
+                     android:layout_width="50dp"
+                     		                     
+                     />
+                 <TextView  
+                   android:text="Birthday" 
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+android:textSize="25dp"
+					                                           android:id="@+id/tvDBirth"          
+                	android:layout_gravity="center_horizontal"
+					android:layout_width="fill_parent"                    
+                     />
+                
+            </LinearLayout>
+        </TableRow>
+        
+                
+                <TableRow android:id="@+id/trTODO"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:paddingBottom="10dp"
+            	
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                
+                 >
+                 <ImageView 
+                     android:id="@+id/ivToDoList"
+                     android:layout_height="50dp"
+                     android:layout_width="50dp"
+                     android:src="@drawable/tdo"
+                     		                     
+                     />
+                 <TextView  
+                   android:text="To Do List" 
+                    android:layout_height="wrap_content"
+					android:layout_width="fill_parent"       
+				                          android:id="@+id/tvDToDo"           
+                     android:gravity="center_horizontal"
+                     android:textSize="25dp"
+                     />
+                </LinearLayout>
+        </TableRow>
+    
+</TableLayout>
+
+</FrameLayout>
